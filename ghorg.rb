@@ -20,10 +20,9 @@ class Ghorg < Formula
 
     system "go", "build", "-o", "ghorg"
 
+    system "make", "homebrew"
+
     bin.install "ghorg"
-    `touch $HOME/.ghorg`
-    `echo hi >> $HOME/.ghorg`
-    puts "done"
   end
 
   # def conf
