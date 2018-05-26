@@ -24,4 +24,9 @@ class Ghorg < Formula
 
     bin.install "ghorg"
   end
+
+  def post_install
+    ohai "You will need to run $ touch $HOME/.ghorg and then copy in the contents from"
+    `touch ${HOME}/.ghorg`
+  end
 end
