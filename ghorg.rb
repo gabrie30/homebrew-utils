@@ -1,3 +1,4 @@
+require 'pry'
 class Ghorg < Formula
   desc "easily clone an entire Github org into one directory "
   homepage "https://github.com/gabrie30/ghorg"
@@ -21,7 +22,7 @@ class Ghorg < Formula
     system "go", "build", "-o", "ghorg"
 
     system "make", "homebrew"
-
+    binding.pry
     bin.install "ghorg"
   end
 end
