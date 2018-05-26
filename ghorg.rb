@@ -20,8 +20,6 @@ class Ghorg < Formula
 
     system "go", "build", "-o", "ghorg"
 
-    system "make", "homebrew"
-
     bin.install "ghorg"
   end
 
@@ -32,5 +30,6 @@ class Ghorg < Formula
     ohai "Rememebr to set your $HOME/.ghorg with the contents from the link below"
     ohai "https://raw.githubusercontent.com/gabrie30/ghorg/master/.env-sample"
     ohai "***************************"
+    ohai ""
   end
 end
