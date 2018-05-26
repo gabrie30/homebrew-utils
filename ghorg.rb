@@ -10,7 +10,7 @@ class Ghorg < Formula
   end
 
   def conf
-    "
+    <<-EOF
     # Add your GitHub token
     # Defaults to using key returned by
     # $ security find-internet-password -s github.com  | grep "acct" | awk -F\" '{ print $4 }'
@@ -20,6 +20,6 @@ class Ghorg < Formula
     GHORG_ABSOLUTE_PATH_TO_CLONE_TO=
     # Branch ghorg resets and leaves checked out, defaults to master
     GHORG_BRANCH=
-    "
+    EOF
   end
 end
