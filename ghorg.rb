@@ -5,6 +5,21 @@ class Ghorg < Formula
   sha256 "68967136ead81cb6d98caa6ecd1b75ea5b2dea64e6b409759e41b081ff670e97"
 
   def install
-    `make homebrew`
+    system("touch", "$HOME/.ghorg")
+    `echo "#{conf}" >> $HOME/.ghorg`
+  end
+
+  def conf
+    <<-EOS
+    # Add your GitHub token
+    # Defaults to using key returned by
+    # $ security find-internet-password -s github.com  | grep "acct" | awk -F\" '{ print $4 }'
+    GHORG_GITHUB_TOKEN=
+    # This is where your org_ghorg directory will be created, use absolute pathing
+    # Defaults to $HOME/Desktop/
+    GHORG_ABSOLUTE_PATH_TO_CLONE_TO=
+    # Branch ghorg resets and leaves checked out, defaults to master
+    GHORG_BRANCH=
+    EOS
   end
 end
