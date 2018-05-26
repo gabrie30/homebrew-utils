@@ -8,7 +8,12 @@ class Ghorg < Formula
 
   def install
     ENV["GOPATH"] = buildpath
-    system "go", "get", "./..."
+
+
+    system "go", "get", "github.com/google/go-github/github"
+    system "go", "get", "golang.org/x/oauth2"
+    system "go", "get", "github.com/joho/godotenv"
+    system "go", "get", "github.com/mitchellh/go-homedir"
     system "go", "build", "-o", "ghorg"
     bin.install "ghorg"
     `touch $HOME/.ghorg`
