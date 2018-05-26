@@ -6,20 +6,20 @@ class Ghorg < Formula
 
   def install
     `touch $HOME/.ghorg`
-    `echo "#{conf}" >> $HOME/.ghorg`
+    `echo hi >> $HOME/.ghorg`
   end
 
-  def conf
-    <<-EOF
-    # Add your GitHub token
-    # Defaults to using key returned by
-    # $ security find-internet-password -s github.com  | grep "acct" | awk -F\" '{ print $4 }'
-    GHORG_GITHUB_TOKEN=
-    # This is where your org_ghorg directory will be created, use absolute pathing
-    # Defaults to $HOME/Desktop/
-    GHORG_ABSOLUTE_PATH_TO_CLONE_TO=
-    # Branch ghorg resets and leaves checked out, defaults to master
-    GHORG_BRANCH=
-    EOF
-  end
+  # def conf
+  #   <<-EOF
+  #   # Add your GitHub token
+  #   # Defaults to using key returned by
+  #   # $ security find-internet-password -s github.com  | grep "acct" | awk -F\" '{ print $4 }'
+  #   GHORG_GITHUB_TOKEN=
+  #   # This is where your org_ghorg directory will be created, use absolute pathing
+  #   # Defaults to $HOME/Desktop/
+  #   GHORG_ABSOLUTE_PATH_TO_CLONE_TO=
+  #   # Branch ghorg resets and leaves checked out, defaults to master
+  #   GHORG_BRANCH=
+  #   EOF
+  # end
 end
