@@ -26,7 +26,11 @@ class Ghorg < Formula
   end
 
   def post_install
-    ohai "You will need to run $ touch $HOME/.ghorg and then copy in the contents from"
-    `touch ${HOME}/.ghorg`
+    ohai ""
+    ohai "***************************"
+    ohai "One last thing!"
+    ohai "Rememebr to set your $HOME/.ghorg with the contents from the link below"
+    ohai "https://raw.githubusercontent.com/gabrie30/ghorg/master/.env-sample"
+    ohai "***************************"
   end
 end
