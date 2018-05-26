@@ -1,9 +1,8 @@
-require 'pry'
 class Ghorg < Formula
   desc "easily clone an entire Github org into one directory "
   homepage "https://github.com/gabrie30/ghorg"
-  url "https://github.com/gabrie30/ghorg/archive/v1.0.3.tar.gz"
-  sha256 "758240782bea2cf78860c2f7e036c8ae5cec7e0e3fd2227f382868385e5372f1"
+  url "https://github.com/gabrie30/ghorg/archive/v1.0.4.tar.gz"
+  sha256 "ffda2316e938ddfb1060b6562c5f75e327df10f2d5eaed42b2aa4ba7cb476fdf"
 
   depends_on "go" => :build
 
@@ -22,7 +21,7 @@ class Ghorg < Formula
     system "go", "build", "-o", "ghorg"
 
     system "make", "homebrew"
-    binding.pry
+
     bin.install "ghorg"
   end
 end
