@@ -4,8 +4,12 @@ class Ghorg < Formula
   url "https://github.com/gabrie30/ghorg/archive/v1.0.2.tar.gz"
   sha256 "68967136ead81cb6d98caa6ecd1b75ea5b2dea64e6b409759e41b081ff670e97"
 
+  depends_on "go" => :build
+
   def install
-    bin.install ghorg
+    system "go", "get", "./..."
+    system "go", "build", "-o", "ghorg"
+    bin.install "ghorg"
     `touch $HOME/.ghorg`
     `echo hi >> $HOME/.ghorg`
     puts "done"
