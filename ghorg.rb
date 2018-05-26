@@ -5,7 +5,7 @@ class Ghorg < Formula
   sha256 "68967136ead81cb6d98caa6ecd1b75ea5b2dea64e6b409759e41b081ff670e97"
 
   def install
-    system("touch", "$HOME/.ghorg")
+    `touch $HOME/.ghorg`
     `echo "#{conf}" >> $HOME/.ghorg`
   end
 
