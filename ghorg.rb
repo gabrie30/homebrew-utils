@@ -7,6 +7,7 @@ class Ghorg < Formula
   depends_on "go" => :build
 
   def install
+    ENV["GOPATH"] = buildpath
     system "go", "get", "./..."
     system "go", "build", "-o", "ghorg"
     bin.install "ghorg"
