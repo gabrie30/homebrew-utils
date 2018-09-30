@@ -1,8 +1,8 @@
 class Ghorg < Formula
   desc "easily clone an entire Github org into one directory "
   homepage "https://github.com/gabrie30/ghorg"
-  url "https://github.com/gabrie30/ghorg/archive/v1.0.5.tar.gz"
-  sha256 "b2c43893de5e895cb0eeeb268eb1c7de41f8dca8c6150cd87227964add279a98"
+  url "https://github.com/gabrie30/ghorg/archive/v1.0.6.tar.gz"
+  sha256 "3bc1c8ab5ef16e39db0a483695202ce7265dae25d90659fdcabf86eac3974b08"
 
   depends_on "go" => :build
 
