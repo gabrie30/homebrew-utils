@@ -27,12 +27,9 @@ class Ghorg < Formula
   def install
     ENV["GOPATH"] = buildpath
 
-    bin_path = "#{buildpath}/src/github.com/gabrie30/ghorg"
-    # Copy all files from their current location (GOPATH root)
-    system "mkdir", "-p", bin_path
+    bin_path = buildpath/"src/github.com/gabrie30/ghorg"
+    bin_path.install Dir["*"]
     cd bin_path do
-      # Install the compiled binary into Homebrew's `bin` - a pre-existing
-      # global variable
       system "go", "build", "-o", bin/"ghorg", "."
     end
   end
