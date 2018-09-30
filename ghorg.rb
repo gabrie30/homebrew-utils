@@ -29,7 +29,7 @@ class Ghorg < Formula
 
     bin_path = "#{buildpath}/src/github.com/gabrie30/ghorg"
     # Copy all files from their current location (GOPATH root)
-    bin_path.install Dir["*"]
+    system "mkdir", "-p", bin_path
     cd bin_path do
       # Install the compiled binary into Homebrew's `bin` - a pre-existing
       # global variable
