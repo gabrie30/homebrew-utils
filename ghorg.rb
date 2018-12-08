@@ -3,7 +3,7 @@ require "language/go"
 class Ghorg < Formula
   desc "easily clone an entire Github org into one directory "
   homepage "https://github.com/gabrie30/ghorg"
-  url "https://github.com/gabrie30/ghorg/archive/v1.0.8.tar.gz"
+  url "https://github.com/gabrie30/ghorg/archive/1.0.8.tar.gz"
   sha256 "6f5adb5e5afa031bd7a59849859c66bf1dffcf54332b66a7e51454472a87fc22"
 
   # Generated with: https://github.com/samertm/homebrew-go-resources
