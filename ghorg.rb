@@ -3,8 +3,8 @@ require "language/go"
 class Ghorg < Formula
   desc "Quickly clone an entire GitHub Org into one directory "
   homepage ""
-  url "https://github.com/gabrie30/ghorg/archive/1.1.4.tar.gz"
-  sha256 "b3faa1543947fef46868ce07cd9cc5f785d544810202ba7b5fb5748175141aa5"
+  url "https://github.com/gabrie30/ghorg/archive/1.1.5.tar.gz"
+  sha256 "7ee9a18d374b6bfd43cad6e214257fcd01cc9dfd93592c40cb92672fc16f3206"
 
   # Generated with: https://github.com/samertm/homebrew-go-resources
 
@@ -142,7 +142,7 @@ class Ghorg < Formula
     url "https://gopkg.in/yaml.v2.git",
       :revision => "51d6538a90f86fe93ac480b35f37b2be17fef232"
   end
-
+  
 
   depends_on "go" => :build
 
