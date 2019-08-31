@@ -3,8 +3,8 @@ require "language/go"
 class Ghorg < Formula
   desc "Quickly clone an entire org/users repositories into one directory - Supports GitHub, GitLab, and Bitbucket"
   homepage ""
-  url "https://github.com/gabrie30/ghorg/archive/1.1.8.tar.gz"
-  sha256 "05b91f21db53bbae15aa36be336dc1f4ac2f30603ad36e7dc5ca6438729d0f7e"
+  url "https://github.com/gabrie30/ghorg/archive/1.1.9.tar.gz"
+  sha256 "18d8a798c9b3251950eb0358831f160ee4a66bddf65972612323c65f55eda0a9"
 
   # Generated with: https://github.com/samertm/homebrew-go-resources
 
@@ -20,7 +20,7 @@ class Ghorg < Formula
 
   go_resource "github.com/google/go-github" do
     url "https://github.com/google/go-github.git",
-      :revision => "24f172eae1a0c53c780f259d8492979900e9af2e"
+      :revision => "da8b749b25d68690af6239660210ab1915b029cd"
   end
 
   go_resource "github.com/google/go-querystring" do
@@ -40,7 +40,7 @@ class Ghorg < Formula
 
   go_resource "github.com/ktrysmt/go-bitbucket" do
     url "https://github.com/ktrysmt/go-bitbucket.git",
-      :revision => "c69b64619ec6fcdbf837d5bc630ab751fcd1adef"
+      :revision => "f538244ac47062f5c3804659f6f0c8356fa3307b"
   end
 
   go_resource "github.com/magiconair/properties" do
@@ -50,12 +50,12 @@ class Ghorg < Formula
 
   go_resource "github.com/mattn/go-colorable" do
     url "https://github.com/mattn/go-colorable.git",
-      :revision => "c52ace132bf44798a21f16fdafaaafbf329519e2"
+      :revision => "388941e3ea99c461d2bc2747eaf27741b6dda096"
   end
 
   go_resource "github.com/mattn/go-isatty" do
     url "https://github.com/mattn/go-isatty.git",
-      :revision => "da60ac76bf7019a8b005f8dd1ad9d1a0e6434155"
+      :revision => "bf9a1dea1961e1d831824fb135332bfb8c10e8b8"
   end
 
   go_resource "github.com/mitchellh/go-homedir" do
@@ -70,7 +70,7 @@ class Ghorg < Formula
 
   go_resource "github.com/pelletier/go-toml" do
     url "https://github.com/pelletier/go-toml.git",
-      :revision => "84da2c4a25c585816f2c4211b699228d111d18ab"
+      :revision => "781fbae71e40e8e598206a0ac02c680d64df2fd0"
   end
 
   go_resource "github.com/spf13/afero" do
@@ -85,7 +85,7 @@ class Ghorg < Formula
 
   go_resource "github.com/spf13/cobra" do
     url "https://github.com/spf13/cobra.git",
-      :revision => "1c9c46d5c1cc2aaebdd1898c0680e85e8a44b36d"
+      :revision => "b80588d523ec50c7fee20218426cf2ff70920f06"
   end
 
   go_resource "github.com/spf13/jwalterweatherman" do
@@ -95,32 +95,32 @@ class Ghorg < Formula
 
   go_resource "github.com/spf13/pflag" do
     url "https://github.com/spf13/pflag.git",
-      :revision => "24fa6976df40757dce6aea913e7b81ade90530e1"
+      :revision => "972238283c0625cf3e881de7699ba8f2524c340a"
   end
 
   go_resource "github.com/spf13/viper" do
     url "https://github.com/spf13/viper.git",
-      :revision => "e02bc9eca55d5fc66221bc0aeeaaa77410603914"
+      :revision => "e697d557b7f549ddf91098cef2ad6e92176dbcdf"
   end
 
   go_resource "github.com/subosito/gotenv" do
     url "https://github.com/subosito/gotenv.git",
-      :revision => "69b5b6104433beb2cb9c3ce00bdadf3c7c2d3f34"
+      :revision => "422ef8095f112cfaf9f40c368e0b9ae8c0714cfb"
   end
 
   go_resource "github.com/xanzy/go-gitlab" do
     url "https://github.com/xanzy/go-gitlab.git",
-      :revision => "ee3313ca5478c4786248d63dd75e4cd8e1fad2db"
+      :revision => "b1d195859ad07645a0c3eb3609a1545b5d9e40be"
   end
 
   go_resource "golang.org/x/crypto" do
     url "https://go.googlesource.com/crypto.git",
-      :revision => "4def268fd1a49955bfb3dda92fe3db4f924f2285"
+      :revision => "60c769a6c58655dab1b9adac0d58967dd517cfba"
   end
 
   go_resource "golang.org/x/net" do
     url "https://go.googlesource.com/net.git",
-      :revision => "ca1201d0de80cfde86cb01aea620983605dfe99b"
+      :revision => "74dc4d7220e7acc4e100824340f3e66577424772"
   end
 
   go_resource "golang.org/x/oauth2" do
@@ -130,7 +130,7 @@ class Ghorg < Formula
 
   go_resource "golang.org/x/sys" do
     url "https://go.googlesource.com/sys.git",
-      :revision => "94b544f455efde7a614f75a3e43a2a65bce93113"
+      :revision => "fb81701db80f1745f51259b1f286de3fe2ec80c8"
   end
 
   go_resource "golang.org/x/text" do
@@ -142,10 +142,8 @@ class Ghorg < Formula
     url "https://gopkg.in/yaml.v2.git",
       :revision => "51d6538a90f86fe93ac480b35f37b2be17fef232"
   end
-  
 
   depends_on "go" => :build
-
 
   def install
     ENV["GOPATH"] = buildpath
