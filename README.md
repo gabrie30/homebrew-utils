@@ -1,6 +1,7 @@
 # homebrew-utils
 
 ## Updating Ghorg
+1. update changelog and bump version in `ghorg version` cmd
 1. [Create new release](https://github.com/gabrie30/ghorg/releases)
 2. run `brew create https://github.com/gabrie30/ghorg/archive/v1.0.x.tar.gz`
     - delete the old one if it exists
