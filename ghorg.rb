@@ -3,8 +3,8 @@ require "language/go"
 class Ghorg < Formula
   desc "Quickly clone an entire org/users repositories into one directory - Supports GitHub, GitLab, and Bitbucket"
   homepage ""
-  url "https://github.com/gabrie30/ghorg/archive/1.1.9.tar.gz"
-  sha256 "18d8a798c9b3251950eb0358831f160ee4a66bddf65972612323c65f55eda0a9"
+  url "https://github.com/gabrie30/ghorg/archive/1.1.10.tar.gz"
+  sha256 "7e123427ee046cd60d8458ae8b4f65b7ce2d6ceb61203d3d894495dcd9fdb120"
 
   # Generated with: https://github.com/samertm/homebrew-go-resources
 
