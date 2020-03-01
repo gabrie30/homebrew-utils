@@ -3,8 +3,8 @@ require "language/go"
 class Ghorg < Formula
   desc "Quickly clone an entire org/users repositories into one directory - Supports GitHub, GitLab, and Bitbucket"
   homepage ""
-  url "https://github.com/gabrie30/ghorg/archive/1.1.10.tar.gz"
-  sha256 "7e123427ee046cd60d8458ae8b4f65b7ce2d6ceb61203d3d894495dcd9fdb120"
+  url "https://github.com/gabrie30/ghorg/archive/1.2.0.tar.gz"
+  sha256 "20660585d2e14e49054b181335012eb9d99799c2862c118f29b2866172338301"
 
   # Generated with: https://github.com/samertm/homebrew-go-resources
 
@@ -15,12 +15,12 @@ class Ghorg < Formula
 
   go_resource "github.com/fsnotify/fsnotify" do
     url "https://github.com/fsnotify/fsnotify.git",
-      :revision => "1485a34d5d5723fea214f5710708e19a831720e4"
+      :revision => "4bf2d1fec78374803a39307bfb8d340688f4f28e"
   end
 
   go_resource "github.com/google/go-github" do
     url "https://github.com/google/go-github.git",
-      :revision => "da8b749b25d68690af6239660210ab1915b029cd"
+      :revision => "1a07ca55c956bb1e859c72922ddea5a7a989b378"
   end
 
   go_resource "github.com/google/go-querystring" do
@@ -30,32 +30,37 @@ class Ghorg < Formula
 
   go_resource "github.com/hashicorp/hcl" do
     url "https://github.com/hashicorp/hcl.git",
-      :revision => "cf7d376da96d9cecec7c7483cec2735efe54a410"
+      :revision => "914dc3f8dd7c463188c73fc47e9ced82a6e421ca"
   end
 
   go_resource "github.com/k0kubun/pp" do
     url "https://github.com/k0kubun/pp.git",
-      :revision => "b20d3da80efaecd224c0a49b0f5594444128f1a0"
+      :revision => "dae4d5f2e789701e22710ed93159077e14bdf3a5"
+  end
+
+  go_resource "github.com/korovkin/limiter" do
+    url "https://github.com/korovkin/limiter.git",
+      :revision => "dac5a6b2a536f0be4fc6264be6115ae0a1a2e866"
   end
 
   go_resource "github.com/ktrysmt/go-bitbucket" do
     url "https://github.com/ktrysmt/go-bitbucket.git",
-      :revision => "f538244ac47062f5c3804659f6f0c8356fa3307b"
+      :revision => "08ab101942e9f6d45346514cae54ca3d18afa250"
   end
 
   go_resource "github.com/magiconair/properties" do
     url "https://github.com/magiconair/properties.git",
-      :revision => "de8848e004dd33dc07a2947b3d76f618a7fc7ef1"
+      :revision => "a586bb8b7deaae2a0eb4c6c8b63a539425628137"
   end
 
   go_resource "github.com/mattn/go-colorable" do
     url "https://github.com/mattn/go-colorable.git",
-      :revision => "388941e3ea99c461d2bc2747eaf27741b6dda096"
+      :revision => "98ec13f34aabf44cc914c65a1cfb7b9bc815aef1"
   end
 
   go_resource "github.com/mattn/go-isatty" do
     url "https://github.com/mattn/go-isatty.git",
-      :revision => "bf9a1dea1961e1d831824fb135332bfb8c10e8b8"
+      :revision => "31745d66dd679ac0ac4f8d3ecff168fce6170c6a"
   end
 
   go_resource "github.com/mitchellh/go-homedir" do
@@ -70,7 +75,7 @@ class Ghorg < Formula
 
   go_resource "github.com/pelletier/go-toml" do
     url "https://github.com/pelletier/go-toml.git",
-      :revision => "781fbae71e40e8e598206a0ac02c680d64df2fd0"
+      :revision => "6f6ca416216a6b6dfee682275111b8b6bb6f8d58"
   end
 
   go_resource "github.com/spf13/afero" do
@@ -85,7 +90,7 @@ class Ghorg < Formula
 
   go_resource "github.com/spf13/cobra" do
     url "https://github.com/spf13/cobra.git",
-      :revision => "b80588d523ec50c7fee20218426cf2ff70920f06"
+      :revision => "b04b5bfc50cbb6c036d2115ed55ea1bccdaf82a9"
   end
 
   go_resource "github.com/spf13/jwalterweatherman" do
@@ -95,52 +100,57 @@ class Ghorg < Formula
 
   go_resource "github.com/spf13/pflag" do
     url "https://github.com/spf13/pflag.git",
-      :revision => "972238283c0625cf3e881de7699ba8f2524c340a"
+      :revision => "2e9d26c8c37aae03e3f9d4e90b7116f5accb7cab"
   end
 
   go_resource "github.com/spf13/viper" do
     url "https://github.com/spf13/viper.git",
-      :revision => "e697d557b7f549ddf91098cef2ad6e92176dbcdf"
+      :revision => "eabbc68a3ecd5cf8c11a2f84dbda5e7a38493b2f"
   end
 
   go_resource "github.com/subosito/gotenv" do
     url "https://github.com/subosito/gotenv.git",
-      :revision => "422ef8095f112cfaf9f40c368e0b9ae8c0714cfb"
+      :revision => "de67a6614a4de71ad5e380b6946e56ab957d58c5"
   end
 
   go_resource "github.com/xanzy/go-gitlab" do
     url "https://github.com/xanzy/go-gitlab.git",
-      :revision => "b1d195859ad07645a0c3eb3609a1545b5d9e40be"
+      :revision => "f74501cbc643b2731fcdfb29ca53230bbb2b935a"
   end
 
   go_resource "golang.org/x/crypto" do
     url "https://go.googlesource.com/crypto.git",
-      :revision => "60c769a6c58655dab1b9adac0d58967dd517cfba"
+      :revision => "1d94cc7ab1c630336ab82ccb9c9cda72a875c382"
   end
 
   go_resource "golang.org/x/net" do
     url "https://go.googlesource.com/net.git",
-      :revision => "74dc4d7220e7acc4e100824340f3e66577424772"
+      :revision => "16171245cfb220d5317888b716d69c1fb4e7992b"
   end
 
   go_resource "golang.org/x/oauth2" do
     url "https://go.googlesource.com/oauth2.git",
-      :revision => "0f29369cfe4552d0e4bcddc57cc75f4d7e672a33"
+      :revision => "858c2ad4c8b6c5d10852cb89079f6ca1c7309787"
   end
 
   go_resource "golang.org/x/sys" do
     url "https://go.googlesource.com/sys.git",
-      :revision => "fb81701db80f1745f51259b1f286de3fe2ec80c8"
+      :revision => "12a6c2dcc1e4cb348b57847c73987099e261714b"
   end
 
   go_resource "golang.org/x/text" do
     url "https://go.googlesource.com/text.git",
-      :revision => "342b2e1fbaa52c93f31447ad2c6abc048c63e475"
+      :revision => "cbf43d21aaebfdfeb81d91a5f444d13a3046e686"
+  end
+
+  go_resource "gopkg.in/ini.v1" do
+    url "https://gopkg.in/ini.v1.git",
+      :revision => "87e589f4917038ae250cff2446db7573f47e97ca"
   end
 
   go_resource "gopkg.in/yaml.v2" do
     url "https://gopkg.in/yaml.v2.git",
-      :revision => "51d6538a90f86fe93ac480b35f37b2be17fef232"
+      :revision => "1f64d6156d11335c3f22d9330b0ad14fc1e789ce"
   end
 
   depends_on "go" => :build
