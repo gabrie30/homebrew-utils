@@ -181,7 +181,7 @@ class Ghorg < Formula
     ohai ""
     ohai "***************************"
     ohai "One last thing!"
-    ohai "Rememebr to set your $HOME/ghorg/conf.yaml with the contents from the link below"
+    ohai "Remember to set your $HOME/ghorg/conf.yaml with the contents from the link below"
     ohai "https://raw.githubusercontent.com/gabrie30/ghorg/master/sample-conf.yaml"
     ohai "***************************"
     ohai ""
