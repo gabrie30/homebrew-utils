@@ -8,24 +8,36 @@ class Ghorg < Formula
 
   # Generated with: https://github.com/samertm/homebrew-go-resources
 
+
+
   go_resource "github.com/fatih/color" do
     url "https://github.com/fatih/color.git",
-      :revision => "3f9d52f7176a6927daacff70a3e8d1dc2025c53e"
+      :revision => "daf2830f2741ebb735b21709a520c5f37d642d85"
   end
 
   go_resource "github.com/fsnotify/fsnotify" do
     url "https://github.com/fsnotify/fsnotify.git",
-      :revision => "4bf2d1fec78374803a39307bfb8d340688f4f28e"
+      :revision => "45d7d09e39ef4ac08d493309fa031790c15bfe8a"
   end
 
   go_resource "github.com/google/go-github" do
     url "https://github.com/google/go-github.git",
-      :revision => "1a07ca55c956bb1e859c72922ddea5a7a989b378"
+      :revision => "34cb1d623f03e277545da01608448d9fea80dc3b"
   end
 
   go_resource "github.com/google/go-querystring" do
     url "https://github.com/google/go-querystring.git",
       :revision => "c8c88dbee036db4e4808d1f2ec8c2e15e11c3f80"
+  end
+
+  go_resource "github.com/hashicorp/go-cleanhttp" do
+    url "https://github.com/hashicorp/go-cleanhttp.git",
+      :revision => "d3fcbee8e1810ecee4bdbf415f42f84cfd0e3361"
+  end
+
+  go_resource "github.com/hashicorp/go-retryablehttp" do
+    url "https://github.com/hashicorp/go-retryablehttp.git",
+      :revision => "27fc49b35882e89429a3cf613f70e1c580bcd8a9"
   end
 
   go_resource "github.com/hashicorp/hcl" do
@@ -35,7 +47,7 @@ class Ghorg < Formula
 
   go_resource "github.com/k0kubun/pp" do
     url "https://github.com/k0kubun/pp.git",
-      :revision => "dae4d5f2e789701e22710ed93159077e14bdf3a5"
+      :revision => "99835366d1cc1593249c150d5c1acfb9036ccb1d"
   end
 
   go_resource "github.com/korovkin/limiter" do
@@ -45,7 +57,7 @@ class Ghorg < Formula
 
   go_resource "github.com/ktrysmt/go-bitbucket" do
     url "https://github.com/ktrysmt/go-bitbucket.git",
-      :revision => "08ab101942e9f6d45346514cae54ca3d18afa250"
+      :revision => "470011f15acf6d30d571329aa8d053f681a782da"
   end
 
   go_resource "github.com/magiconair/properties" do
@@ -55,12 +67,12 @@ class Ghorg < Formula
 
   go_resource "github.com/mattn/go-colorable" do
     url "https://github.com/mattn/go-colorable.git",
-      :revision => "98ec13f34aabf44cc914c65a1cfb7b9bc815aef1"
+      :revision => "4e32bdb9fe4eefa9b10cb112e44debf77784ff7a"
   end
 
   go_resource "github.com/mattn/go-isatty" do
     url "https://github.com/mattn/go-isatty.git",
-      :revision => "31745d66dd679ac0ac4f8d3ecff168fce6170c6a"
+      :revision => "cb30d6282491c185f77d9bec5d25de1bb61a06bc"
   end
 
   go_resource "github.com/mitchellh/go-homedir" do
@@ -70,27 +82,27 @@ class Ghorg < Formula
 
   go_resource "github.com/mitchellh/mapstructure" do
     url "https://github.com/mitchellh/mapstructure.git",
-      :revision => "3536a929edddb9a5b34bd6861dc4a9647cb459fe"
+      :revision => "ba04b217da920f27cfc994a979894602990935ad"
   end
 
   go_resource "github.com/pelletier/go-toml" do
     url "https://github.com/pelletier/go-toml.git",
-      :revision => "6f6ca416216a6b6dfee682275111b8b6bb6f8d58"
+      :revision => "8e8d2a6aad23fcaa64716c5fa6975ec3abbf8281"
   end
 
   go_resource "github.com/spf13/afero" do
     url "https://github.com/spf13/afero.git",
-      :revision => "588a75ec4f32903aa5e39a2619ba6a4631e28424"
+      :revision => "f1155579b0d925f4ccae2da50175acd36d03d632"
   end
 
   go_resource "github.com/spf13/cast" do
     url "https://github.com/spf13/cast.git",
-      :revision => "c01685bb8421cecb276fa517e91f757215f980b3"
+      :revision => "1ffadf551085444af981432dd0f6d1160c11ec64"
   end
 
   go_resource "github.com/spf13/cobra" do
     url "https://github.com/spf13/cobra.git",
-      :revision => "b04b5bfc50cbb6c036d2115ed55ea1bccdaf82a9"
+      :revision => "b80aeb17fc46362ff9cea51437a719322f8965ac"
   end
 
   go_resource "github.com/spf13/jwalterweatherman" do
@@ -105,7 +117,7 @@ class Ghorg < Formula
 
   go_resource "github.com/spf13/viper" do
     url "https://github.com/spf13/viper.git",
-      :revision => "eabbc68a3ecd5cf8c11a2f84dbda5e7a38493b2f"
+      :revision => "97ee7adfef4882d78c0ef26e22a0c8a7a8bf6776"
   end
 
   go_resource "github.com/subosito/gotenv" do
@@ -115,42 +127,47 @@ class Ghorg < Formula
 
   go_resource "github.com/xanzy/go-gitlab" do
     url "https://github.com/xanzy/go-gitlab.git",
-      :revision => "f74501cbc643b2731fcdfb29ca53230bbb2b935a"
+      :revision => "0e58a4f6b76e750f24fc6abe09c5f628465d6919"
   end
 
   go_resource "golang.org/x/crypto" do
     url "https://go.googlesource.com/crypto.git",
-      :revision => "1d94cc7ab1c630336ab82ccb9c9cda72a875c382"
+      :revision => "baeed622b8d86045ff442b324772b0ad306a2b3f"
   end
 
   go_resource "golang.org/x/net" do
     url "https://go.googlesource.com/net.git",
-      :revision => "16171245cfb220d5317888b716d69c1fb4e7992b"
+      :revision => "d3edc9973b7eb1fb302b0ff2c62357091cea9a30"
   end
 
   go_resource "golang.org/x/oauth2" do
     url "https://go.googlesource.com/oauth2.git",
-      :revision => "858c2ad4c8b6c5d10852cb89079f6ca1c7309787"
+      :revision => "bf48bf16ab8d622ce64ec6ce98d2c98f916b6303"
   end
 
   go_resource "golang.org/x/sys" do
     url "https://go.googlesource.com/sys.git",
-      :revision => "12a6c2dcc1e4cb348b57847c73987099e261714b"
+      :revision => "c3d80250170dec19bf61949c81233cede5ddaf61"
   end
 
   go_resource "golang.org/x/text" do
     url "https://go.googlesource.com/text.git",
-      :revision => "cbf43d21aaebfdfeb81d91a5f444d13a3046e686"
+      :revision => "06d492aade888ab8698aad35476286b7b555c961"
+  end
+
+  go_resource "golang.org/x/time" do
+    url "https://go.googlesource.com/time.git",
+      :revision => "555d28b269f0569763d25dbe1a237ae74c6bcc82"
   end
 
   go_resource "gopkg.in/ini.v1" do
     url "https://gopkg.in/ini.v1.git",
-      :revision => "87e589f4917038ae250cff2446db7573f47e97ca"
+      :revision => "39bc4ddcb8b9d0100f7a040816380ccda878b94a"
   end
 
   go_resource "gopkg.in/yaml.v2" do
     url "https://gopkg.in/yaml.v2.git",
-      :revision => "1f64d6156d11335c3f22d9330b0ad14fc1e789ce"
+      :revision => "53403b58ad1b561927d19068c655246f2db79d48"
   end
 
   depends_on "go" => :build
