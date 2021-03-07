@@ -1,5 +1,5 @@
 class Ghorg < Formula
-  ghorg_version = "1.5.1"
+  ghorg_version = "v1.5.1"
 
   desc "Quickly clone an entire org/users repositories into one directory"
   homepage "https://github.com/gabrie30/ghorg"
