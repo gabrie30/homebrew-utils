@@ -1,11 +1,11 @@
 class Ghorg < Formula
-  ghorg_version = "v1.7.0"
+  ghorg_version = "v1.7.1"
 
   desc "Quickly clone an entire org/users repositories into one directory"
   homepage "https://github.com/gabrie30/ghorg"
   url "https://github.com/gabrie30/ghorg/archive/#{ghorg_version}.tar.gz"
   version ghorg_version
-  sha256 "b30d9e03544743a2c5e8b591f8ab8eec56288c8264c131b3ac455ac4403f9281"
+  sha256 "bcfb647abb400b9c727ac0cdf12408268aa931675a62b1f89cbd3d8a4cacaed6"
   license "Apache-2.0"
 
   depends_on "go" => :build
