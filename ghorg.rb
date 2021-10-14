@@ -28,9 +28,9 @@ class Ghorg < Formula
   def post_install
     ohai ""
     ohai "***************************"
-    ohai "One last thing!"
-    ohai "Remember to set your $HOME/ghorg/conf.yaml with the contents from the link below"
-    ohai "https://raw.githubusercontent.com/gabrie30/ghorg/master/sample-conf.yaml"
+    ohai "For examples on how to use ghorg see: https://github.com/gabrie30/ghorg/tree/master/examples"
+    ohai ""
+    ohai "Remember to set your $HOME/ghorg/conf.yaml"
     ohai ""
     ohai "Here's all you need to do..."
     ohai "1) mkdir -p $HOME/.config/ghorg"
