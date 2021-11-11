@@ -30,7 +30,7 @@ class Ghorg < Formula
     ohai "***************************"
     ohai "For examples on how to use ghorg see: https://github.com/gabrie30/ghorg/tree/master/examples"
     ohai ""
-    ohai "Remember to set your $HOME/ghorg/conf.yaml"
+    ohai "Remember to set your $HOME/.config/ghorg/conf.yaml"
     ohai ""
     ohai "Here's all you need to do..."
     ohai "1) mkdir -p $HOME/.config/ghorg"
