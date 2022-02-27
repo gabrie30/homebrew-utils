@@ -46,7 +46,7 @@ class Ghorg < Formula
     end
   end
 
-  depends_on "go"
+  depends_on "git"
 
   def post_install
     ohai ""
