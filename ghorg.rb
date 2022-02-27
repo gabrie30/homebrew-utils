@@ -46,8 +46,6 @@ class Ghorg < Formula
     end
   end
 
-  depends_on "git"
-
   def post_install
     ohai ""
 ohai "***************************"
