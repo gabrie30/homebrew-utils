@@ -5,21 +5,21 @@
 class Ghorg < Formula
   desc "Quickly clone an entire org/users repositories into one directory"
   homepage "https://github.com/gabrie30/ghorg"
-  version "1.7.12"
+  version "1.7.13"
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.12/ghorg_1.7.12_Darwin_x86_64.tar.gz"
-      sha256 "4c77bf6f9eb8100358f35d16dbfcd3b495cbce5028bf0619b477b68b0cb0f472"
+    if Hardware::CPU.arm?
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.13/ghorg_1.7.13_Darwin_arm64.tar.gz"
+      sha256 "0b6dfaf2915eefed677cafaf2bcbaf1cf9ae761f8b2de1a876d4c69546b7d5d7"
 
       def install
         bin.install "ghorg"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.12/ghorg_1.7.12_Darwin_arm64.tar.gz"
-      sha256 "74c7c5c667c384b8109e40eccea162509a22aad7cd38849d9db7c5dcc6edcb73"
+    if Hardware::CPU.intel?
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.13/ghorg_1.7.13_Darwin_x86_64.tar.gz"
+      sha256 "1795dcc6424b9f0b4c7260b69a0313ab3255c5e4ab7945f9f5cb1f90ed4731c2"
 
       def install
         bin.install "ghorg"
@@ -29,16 +29,16 @@ class Ghorg < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.12/ghorg_1.7.12_Linux_arm64.tar.gz"
-      sha256 "7b6beb26f235d561086ab8151b3c3727a834d50d2602f19af7454056d0cb2a17"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.13/ghorg_1.7.13_Linux_arm64.tar.gz"
+      sha256 "16aa1155eb8ea6777d8370259d7bc93b9de8a4b280862e5c063b5606de6fe239"
 
       def install
         bin.install "ghorg"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.12/ghorg_1.7.12_Linux_x86_64.tar.gz"
-      sha256 "4666497f7b6443fd817988e8b2be7b5ece1c2856e1195e28ad775bf60edbaaff"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.13/ghorg_1.7.13_Linux_x86_64.tar.gz"
+      sha256 "2372f18aa5775446082a74a41de28cb756e226446a6e742092a24f3e4861ae27"
 
       def install
         bin.install "ghorg"
@@ -48,17 +48,16 @@ class Ghorg < Formula
 
   def post_install
     ohai ""
-ohai "***************************"
-ohai "For examples on how to use ghorg see: https://github.com/gabrie30/ghorg/tree/master/examples"
-ohai ""
-ohai "Remember to set your $HOME/.config/ghorg/conf.yaml"
-ohai ""
-ohai "Here's all you need to do..."
-ohai "1) mkdir -p $HOME/.config/ghorg"
-ohai "2) curl https://raw.githubusercontent.com/gabrie30/ghorg/master/sample-conf.yaml > $HOME/.config/ghorg/conf.yaml"
-ohai "***************************"
-ohai ""
-
+    ohai "***************************"
+    ohai "For examples on how to use ghorg see: https://github.com/gabrie30/ghorg/tree/master/examples"
+    ohai ""
+    ohai "Remember to set your $HOME/.config/ghorg/conf.yaml"
+    ohai ""
+    ohai "Here's all you need to do..."
+    ohai "1) mkdir -p $HOME/.config/ghorg"
+    ohai "2) curl https://raw.githubusercontent.com/gabrie30/ghorg/master/sample-conf.yaml > $HOME/.config/ghorg/conf.yaml"
+    ohai "***************************"
+    ohai ""
   end
 
   test do
