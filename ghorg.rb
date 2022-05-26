@@ -5,21 +5,21 @@
 class Ghorg < Formula
   desc "Quickly clone an entire org/users repositories into one directory"
   homepage "https://github.com/gabrie30/ghorg"
-  version "1.7.13"
+  version "1.7.14"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.13/ghorg_1.7.13_Darwin_arm64.tar.gz"
-      sha256 "0b6dfaf2915eefed677cafaf2bcbaf1cf9ae761f8b2de1a876d4c69546b7d5d7"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.14/ghorg_1.7.14_Darwin_arm64.tar.gz"
+      sha256 "82bfc56e5e8710199f3fc29f1e8c36b71cce4a15efe4b1215fb21d370a4d9a70"
 
       def install
         bin.install "ghorg"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.13/ghorg_1.7.13_Darwin_x86_64.tar.gz"
-      sha256 "1795dcc6424b9f0b4c7260b69a0313ab3255c5e4ab7945f9f5cb1f90ed4731c2"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.14/ghorg_1.7.14_Darwin_x86_64.tar.gz"
+      sha256 "c57d50ed3910a7931f7b8a862847b4ec786223a500a7804884f6f532b4a1672f"
 
       def install
         bin.install "ghorg"
@@ -28,17 +28,17 @@ class Ghorg < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.13/ghorg_1.7.13_Linux_arm64.tar.gz"
-      sha256 "16aa1155eb8ea6777d8370259d7bc93b9de8a4b280862e5c063b5606de6fe239"
+    if Hardware::CPU.intel?
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.14/ghorg_1.7.14_Linux_x86_64.tar.gz"
+      sha256 "338edd235661c480d6750bce50ac4e13d966aecd6575650d46e7a3feca40ba81"
 
       def install
         bin.install "ghorg"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.13/ghorg_1.7.13_Linux_x86_64.tar.gz"
-      sha256 "2372f18aa5775446082a74a41de28cb756e226446a6e742092a24f3e4861ae27"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.14/ghorg_1.7.14_Linux_arm64.tar.gz"
+      sha256 "4e2c351cd0e2e760629dfdd46f36c1727a7d5c21c85ae986c5552916ca1f4e25"
 
       def install
         bin.install "ghorg"
