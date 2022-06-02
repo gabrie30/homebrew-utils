@@ -5,21 +5,21 @@
 class Ghorg < Formula
   desc "Quickly clone an entire org/users repositories into one directory"
   homepage "https://github.com/gabrie30/ghorg"
-  version "1.7.15"
+  version "1.7.16"
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.15/ghorg_1.7.15_Darwin_arm64.tar.gz"
-      sha256 "ca19e384f59c5d7c178a33fdeb93e0c225ef406b7a285bfa5b68492916055e3d"
+    if Hardware::CPU.intel?
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.16/ghorg_1.7.16_Darwin_x86_64.tar.gz"
+      sha256 "045cd01a33446b557f8e06f7971ee67baf9153cf8af2a979949649623dfbc4f2"
 
       def install
         bin.install "ghorg"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.15/ghorg_1.7.15_Darwin_x86_64.tar.gz"
-      sha256 "d92cf9ce5a3c48813841b43ee9866338371f11e69ff80c9d90d753978e49244c"
+    if Hardware::CPU.arm?
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.16/ghorg_1.7.16_Darwin_arm64.tar.gz"
+      sha256 "7f33057b31c793cd46ca82e254751d2ce6e79cf5462ac100455bfec995d30aae"
 
       def install
         bin.install "ghorg"
@@ -28,17 +28,17 @@ class Ghorg < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.15/ghorg_1.7.15_Linux_x86_64.tar.gz"
-      sha256 "defe60721fdca9b840ae8f55db1f2ff1f759f70757d0325c388de54eceee0bc8"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.16/ghorg_1.7.16_Linux_arm64.tar.gz"
+      sha256 "8679e149509463f8274e31f98856fa71c18e45c262afcf76de151b7a5594e91e"
 
       def install
         bin.install "ghorg"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.15/ghorg_1.7.15_Linux_arm64.tar.gz"
-      sha256 "a0c30cf6f4a54cb3691a8fa0703cb4189dd0590d4f49cf4ff01bc91646599bfb"
+    if Hardware::CPU.intel?
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.7.16/ghorg_1.7.16_Linux_x86_64.tar.gz"
+      sha256 "f15fa15acb353339bffed7b9842107ac2088e0b8abadfb9e94eb23ae77922905"
 
       def install
         bin.install "ghorg"
