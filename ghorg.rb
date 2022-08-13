@@ -5,21 +5,21 @@
 class Ghorg < Formula
   desc "Quickly clone an entire org/users repositories into one directory"
   homepage "https://github.com/gabrie30/ghorg"
-  version "1.8.3"
+  version "1.8.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.8.3/ghorg_1.8.3_Darwin_arm64.tar.gz"
-      sha256 "9e22c75c7008b1d7e105698a9242a006a660d605715f9eaf41f12d278c79569d"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.8.4/ghorg_1.8.4_Darwin_arm64.tar.gz"
+      sha256 "4924346fd014fe4a78a351154c6c2f72a95b6d49a7b38405af581439b3034a2a"
 
       def install
         bin.install "ghorg"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.8.3/ghorg_1.8.3_Darwin_x86_64.tar.gz"
-      sha256 "75512242691b6e7c841288a903df7681ff9e8799e28d6613a02bb70daaff373a"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.8.4/ghorg_1.8.4_Darwin_x86_64.tar.gz"
+      sha256 "20af6988b381e96daa656afb011ab18170a003bffa5a44a6536d8d98cfbfa147"
 
       def install
         bin.install "ghorg"
@@ -29,16 +29,16 @@ class Ghorg < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.8.3/ghorg_1.8.3_Linux_arm64.tar.gz"
-      sha256 "028f21192d8da458ab13b9815b2bb3b873122b3fad40d013db1360605244f0ba"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.8.4/ghorg_1.8.4_Linux_arm64.tar.gz"
+      sha256 "ccd200b45b2a89557e37fd8a3c3a00f65dcb6381c5bfa9c1fd75a1277f38b954"
 
       def install
         bin.install "ghorg"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.8.3/ghorg_1.8.3_Linux_x86_64.tar.gz"
-      sha256 "e12a9d61fe4305669195375c4f1ac7bf4b04a17c8bada844923e5bd8ec1edfc1"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.8.4/ghorg_1.8.4_Linux_x86_64.tar.gz"
+      sha256 "f890417e821535d4e381edc678ac4a7f4bf2400635afd7f53a2c3431713754a7"
 
       def install
         bin.install "ghorg"
