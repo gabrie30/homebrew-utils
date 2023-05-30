@@ -5,21 +5,21 @@
 class Ghorg < Formula
   desc "Quickly clone an entire org/users repositories into one directory"
   homepage "https://github.com/gabrie30/ghorg"
-  version "1.9.4"
+  version "1.9.5"
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.9.4/ghorg_1.9.4_Darwin_arm64.tar.gz"
-      sha256 "c2cf78954edbef6b5f47beb6616adfe6e14963ee59b970cb3bc491b65f5a46a2"
+    if Hardware::CPU.intel?
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.9.5/ghorg_1.9.5_Darwin_x86_64.tar.gz"
+      sha256 "752dd62174b06a037dd61f68a2e7e93fd4593584c4765397f6a82f2e55959d37"
 
       def install
         bin.install "ghorg"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.9.4/ghorg_1.9.4_Darwin_x86_64.tar.gz"
-      sha256 "bc0db33ae92b273ccbdcc1404814c1858cd4ce7a167e8b490f319ee811f7c9f2"
+    if Hardware::CPU.arm?
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.9.5/ghorg_1.9.5_Darwin_arm64.tar.gz"
+      sha256 "c2742f000c1ed090274252e1fae3678adc3b3048d3a577e8f922fe1dd22d72a1"
 
       def install
         bin.install "ghorg"
@@ -29,16 +29,16 @@ class Ghorg < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.9.4/ghorg_1.9.4_Linux_arm64.tar.gz"
-      sha256 "0a24080f2eb6dccf2288c910b38c82694a7a6815b8611768d4126b0a69bcb9a6"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.9.5/ghorg_1.9.5_Linux_arm64.tar.gz"
+      sha256 "9f3d653313090b0a40671e7ecfdad1ee08461a97a117112ed263f1022d600ca5"
 
       def install
         bin.install "ghorg"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.9.4/ghorg_1.9.4_Linux_x86_64.tar.gz"
-      sha256 "51a07ecbd7723843652eb8c0555cf934773a3ec9a08d02629d4f4fa20509845e"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.9.5/ghorg_1.9.5_Linux_x86_64.tar.gz"
+      sha256 "0c3013897a1864abc24500b35e1724a3ec62158d8b1d138e730c99a98851d6ec"
 
       def install
         bin.install "ghorg"
