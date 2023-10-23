@@ -10,7 +10,7 @@ class Ghorg < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.9.9/ghorg_Darwin_x86_64.tar.gz"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.9.9/ghorg_1.9.9_Darwin_x86_64.tar.gz"
       sha256 "b186bdabb9595e655818a9b8f01d937fc1e9c8f890981bbf93b40a3a15208def"
 
       def install
@@ -18,7 +18,7 @@ class Ghorg < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.9.9/ghorg_Darwin_arm64.tar.gz"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.9.9/ghorg_1.9.9_Darwin_arm64.tar.gz"
       sha256 "4978cb4c0965813314dfc8454c93144336f2dd681db2f502c579e5f4aff5aee6"
 
       def install
@@ -29,7 +29,7 @@ class Ghorg < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.9.9/ghorg_Linux_x86_64.tar.gz"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.9.9/ghorg_1.9.9_Linux_x86_64.tar.gz"
       sha256 "7790e3e29c1e4ecb0ecc7cfc4b11a17e3247ab799ec9d48025d0d90b2bee8de9"
 
       def install
@@ -37,7 +37,7 @@ class Ghorg < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.9.9/ghorg_Linux_arm64.tar.gz"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.9.9/ghorg_1.9.9_Linux_arm64.tar.gz"
       sha256 "4ca21e8c2ba57f68621fe0b5bd2fe3801f1c11bff6588d87a5562538b58f8273"
 
       def install
