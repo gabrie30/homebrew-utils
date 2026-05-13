@@ -5,21 +5,21 @@
 class Ghorg < Formula
   desc "Quickly clone an entire org/users repositories into one directory"
   homepage "https://github.com/gabrie30/ghorg"
-  version "1.11.10"
+  version "1.11.11"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.11.10/ghorg_1.11.10_Darwin_x86_64.tar.gz"
-      sha256 "56809ecdf8cfb81cfb53ad55d0b0d595d573c315a6663bd131d59ad7ffcb3225"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.11.11/ghorg_1.11.11_Darwin_x86_64.tar.gz"
+      sha256 "a748c7d31efff0c849f7ce18490159daa27f80bc7584f88c89d6a56cbc297632"
 
       define_method(:install) do
         bin.install "ghorg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.11.10/ghorg_1.11.10_Darwin_arm64.tar.gz"
-      sha256 "319ae7c7b24736a8eea7d1bf3456f910888cb9e0870383967ed249a815c282f2"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.11.11/ghorg_1.11.11_Darwin_arm64.tar.gz"
+      sha256 "9ad95cc96d02c5f665464a0ab0ab7d7ca305bebc1f9f369a464692a543efc845"
 
       define_method(:install) do
         bin.install "ghorg"
@@ -29,15 +29,15 @@ class Ghorg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.11.10/ghorg_1.11.10_Linux_x86_64.tar.gz"
-      sha256 "28ccf93b5a320ec31589e1b84d3e58fc5661fbbeb1b6e892ca59346790c96850"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.11.11/ghorg_1.11.11_Linux_x86_64.tar.gz"
+      sha256 "3f479d2e6d376114ddb0a24af4774d2f28eb6a735f5d9f3a2d1847df61d85752"
       define_method(:install) do
         bin.install "ghorg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gabrie30/ghorg/releases/download/v1.11.10/ghorg_1.11.10_Linux_arm64.tar.gz"
-      sha256 "ad807fa207a85a1ba373a25509d0c33a7ce6ac7bc4adb8d094f19df142a40f0f"
+      url "https://github.com/gabrie30/ghorg/releases/download/v1.11.11/ghorg_1.11.11_Linux_arm64.tar.gz"
+      sha256 "4c7452fdf81730187579359f6a621139252e4fe5c11f2083b850d514c7f0b310"
       define_method(:install) do
         bin.install "ghorg"
       end
